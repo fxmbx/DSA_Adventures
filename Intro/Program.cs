@@ -6,6 +6,7 @@ using Intro;
 using Intro.ADT;
 using Intro.ADT.LinkedList;
 using Intro.ADT.Stack;
+using Intro.ADT.Queue;
 
 
 // Person p = new Person();
@@ -64,20 +65,15 @@ using Intro.ADT.Stack;
 
 // linkedListDS.Display();
 
-var stack = new Stack(10);
+var queue = new Queue(10);
 
-    stack.Push("Bruce Wayne");
-    stack.Push("Damian Wayne");
-    stack.Push("Tim Drake");
-    stack.Push("Dick Grayson");
-    stack.Push("Jason Todd");
+queue.Enquque(1);
+queue.Enquque(2);
+queue.Enquque(3);
+queue.Enquque(4);
 
-// stack.Pop();
-System.Console.WriteLine(stack.Peek());
-System.Console.WriteLine();
+queue.Dequeue();
+queue.Enquque(5);
 
-while(!stack.IsEmpty()){
-    var s = stack.Pop();
-    System.Console.WriteLine(s);
-}
+System.Console.WriteLine( queue.Peek());
 

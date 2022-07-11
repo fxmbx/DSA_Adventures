@@ -25,7 +25,7 @@ namespace Intro.ADT.Queue
             NItems++;
         }
 
-        public int Dequeuq(){
+        public int Dequeue(){
             int temp = QueueArray[Front];
             Front++;
             if(Front == MaxSize){
