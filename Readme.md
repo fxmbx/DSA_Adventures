@@ -99,3 +99,15 @@ it is sorted in a sense . gretaer number goes to the right lesser number to the 
 --max of two nodes per parent
 --left node is less than the parent
 --right node is greater than parent
+
+### BUBBLE SORT 😬 that algorithm you have to know but should never use cause its quadratic i.e O(n^2) complexity which is bad
+
+take the first two elements in the array and swap based on which is larger
+i.e and array of
+var arry = new int[]{6,5,7,2};
+on first pass becomes 5,6,7,2
+second pass becomes 5,6,7,2
+third pass becomes 5,6,2,7
+...➿
+
+### Recursion 😮 function that calls itself

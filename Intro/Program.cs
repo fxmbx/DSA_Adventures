@@ -9,6 +9,7 @@ using Intro.ADT.Stack;
 using Intro.ADT.Queue;
 // using Intro.ADT.Search;
 using Intro.ADT.Search.BinarySearch;
+using Intro.ADT.Sorting;
 
 
 // Person p = new Person();
@@ -86,14 +87,20 @@ using Intro.ADT.Search.BinarySearch;
 // var search = new Search();
 //System.Console.WriteLine(search.BinarySearch(array,9));
 
- 
-
-var bst = new BinarySearchTree();
-bst.Insert(7, "Eminem");
-bst.Insert(27, "Logic");
-bst.Insert(15, "Jay z");
-bst.Insert(121, "E cole");
-bst.Insert(1, "j.cole");
 
 
-System.Console.WriteLine(bst.Find(15));
+// var bst = new BinarySearchTree();
+// bst.Insert(7, "Eminem");
+// bst.Insert(27, "Logic");
+// bst.Insert(15, "Jay z");
+// bst.Insert(121, "E cole");
+// bst.Insert(1, "j.cole");
+
+
+// System.Console.WriteLine(bst.Find(15));
+
+
+//SORTING 
+int[] intArry = new int[] {6,5,1,7,2,4};
+BubbleSortAlgorithm sort = new BubbleSortAlgorithm();
+System.Console.WriteLine(sort.BubbleSort(intArry));
