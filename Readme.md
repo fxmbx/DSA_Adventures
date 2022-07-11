@@ -67,3 +67,17 @@ Insert, Delete are O(1)
 -asign current node
 -loop
 check current node is null
+
+### Stacks follow LIFO . a linked list typically be use but stakcs cant be implemented with arrays also
+
+## Push Pop Peek are 0(1)
+
+### Queue FIFO
+
+## Enqueue
+
+-add items to the end
+
+## Dequeue
+
+-remove item from the front
