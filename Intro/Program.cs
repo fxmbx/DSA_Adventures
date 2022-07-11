@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using Intro;
 
 using Intro.ADT;
@@ -30,17 +31,34 @@ using Intro.ADT.LinkedList;
 // System.Console.WriteLine(ls.LinearSearch(array, 8));
 
 
-Node nodeA = new Node();
-Node nodeB = new Node();
-Node nodeC = new Node();
-Node nodeD = new Node();
+// Node nodeA = new Node();
+// Node nodeB = new Node();
+// Node nodeC = new Node();
+// Node nodeD = new Node();
 
-nodeA.Data = 10;
-nodeB.Data = 20;
-nodeC.Data = 30;
-nodeD.Data = 40;
+// nodeA.Data = 10;
+// nodeB.Data = 20;
+// nodeC.Data = 30;
+// nodeD.Data = 40;
 
-nodeA.Next = nodeB;
-nodeB.Next = nodeC;
-nodeC.Next = nodeD;
+// nodeA.Next = nodeB;
+// nodeB.Next = nodeC;
+// nodeC.Next = nodeD;
 // nodeD.Next = nodeB;
+
+var linkedListDS = new LinkedListDS();
+linkedListDS.InsertHead(1);
+linkedListDS.InsertHead(2);
+linkedListDS.InsertHead(3);
+linkedListDS.InsertHead(4);
+linkedListDS.InsertHead(5);
+
+
+linkedListDS.DeleteFirst();
+linkedListDS.DeleteFirst();
+
+
+linkedListDS.InsertLast(60);
+linkedListDS.InsertLast(70);
+
+linkedListDS.Display();
