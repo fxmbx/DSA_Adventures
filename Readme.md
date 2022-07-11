@@ -91,3 +91,11 @@ check current node is null
 --is m > f ? search left side
 --is m < f? search right side
 --keep halfing till you find the number ➿
+
+### Binary Search Tree heirachical data sttucture. utilizes reursion
+
+it is sorted in a sense . gretaer number goes to the right lesser number to the left
+
+--max of two nodes per parent
+--left node is less than the parent
+--right node is greater than parent

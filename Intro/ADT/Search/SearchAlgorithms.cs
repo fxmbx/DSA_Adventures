@@ -1,7 +1,7 @@
 
 namespace Intro.ADT
 {
-    public class Search
+    public class SearchAlgorithms
     {
         public bool LinearSearch(int[] array, int key){
             for (int i = 0; i < array.Length; i++)
@@ -21,9 +21,9 @@ namespace Intro.ADT
 
               int midpoint = (start+end)/2;
 
-              if(sortedArray[midpoint]== value){
+               if(sortedArray[midpoint]== value){
                   return midpoint;
-              }else if(sortedArray[midpoint] < value){
+               }else if(sortedArray[midpoint] < value){
                   start = midpoint +1;
               }
               else{

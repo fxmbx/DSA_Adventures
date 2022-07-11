@@ -7,6 +7,8 @@ using Intro.ADT;
 using Intro.ADT.LinkedList;
 using Intro.ADT.Stack;
 using Intro.ADT.Queue;
+// using Intro.ADT.Search;
+using Intro.ADT.Search.BinarySearch;
 
 
 // Person p = new Person();
@@ -80,6 +82,18 @@ using Intro.ADT.Queue;
 
 
 //Binary Serach only works on sorted data
-int[] array = new int[] {1,2,3,4,5,6,7,8,9,10};
-var search = new Search();
-System.Console.WriteLine(search.BinarySearch(array,9));
+//int[] array = new int[] {1,2,3,4,5,6,7,8,9,10};
+// var search = new Search();
+//System.Console.WriteLine(search.BinarySearch(array,9));
+
+ 
+
+var bst = new BinarySearchTree();
+bst.Insert(7, "Eminem");
+bst.Insert(27, "Logic");
+bst.Insert(15, "Jay z");
+bst.Insert(121, "E cole");
+bst.Insert(1, "j.cole");
+
+
+System.Console.WriteLine(bst.Find(15));
