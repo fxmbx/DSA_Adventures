@@ -5,6 +5,7 @@ using Intro;
 
 using Intro.ADT;
 using Intro.ADT.LinkedList;
+using Intro.ADT.Stack;
 
 
 // Person p = new Person();
@@ -46,19 +47,37 @@ using Intro.ADT.LinkedList;
 // nodeC.Next = nodeD;
 // nodeD.Next = nodeB;
 
-var linkedListDS = new LinkedListDS();
-linkedListDS.InsertHead(1);
-linkedListDS.InsertHead(2);
-linkedListDS.InsertHead(3);
-linkedListDS.InsertHead(4);
-linkedListDS.InsertHead(5);
+// var linkedListDS = new LinkedListDS();
+// linkedListDS.InsertHead(1);
+// linkedListDS.InsertHead(2);
+// linkedListDS.InsertHead(3);
+// linkedListDS.InsertHead(4);
+// linkedListDS.InsertHead(5);
 
 
-linkedListDS.DeleteFirst();
-linkedListDS.DeleteFirst();
+// linkedListDS.DeleteFirst();
+// linkedListDS.DeleteFirst();
 
 
-linkedListDS.InsertLast(60);
-linkedListDS.InsertLast(70);
+// linkedListDS.InsertLast(60);
+// linkedListDS.InsertLast(70);
 
-linkedListDS.Display();
+// linkedListDS.Display();
+
+var stack = new Stack(10);
+
+    stack.Push("Bruce Wayne");
+    stack.Push("Damian Wayne");
+    stack.Push("Tim Drake");
+    stack.Push("Dick Grayson");
+    stack.Push("Jason Todd");
+
+// stack.Pop();
+System.Console.WriteLine(stack.Peek());
+System.Console.WriteLine();
+
+while(!stack.IsEmpty()){
+    var s = stack.Pop();
+    System.Console.WriteLine(s);
+}
+
