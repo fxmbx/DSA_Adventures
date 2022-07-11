@@ -81,3 +81,13 @@ check current node is null
 ## Dequeue
 
 -remove item from the front
+
+### Binary Search . NOTE : only works sorted data
+
+## steps for the algorithm for find f
+
+--Find middle element i.e m= n-1/2
+--is f the element the middle? if yes done if not
+--is m > f ? search left side
+--is m < f? search right side
+--keep halfing till you find the number ➿

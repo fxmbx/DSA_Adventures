@@ -65,15 +65,21 @@ using Intro.ADT.Queue;
 
 // linkedListDS.Display();
 
-var queue = new Queue(10);
+// var queue = new Queue(10);
 
-queue.Enquque(1);
-queue.Enquque(2);
-queue.Enquque(3);
-queue.Enquque(4);
+// queue.Enquque(1);
+// queue.Enquque(2);
+// queue.Enquque(3);
+// queue.Enquque(4);
 
-queue.Dequeue();
-queue.Enquque(5);
+// queue.Dequeue();
+// queue.Enquque(5);
 
-System.Console.WriteLine( queue.Peek());
+// System.Console.WriteLine( queue.Peek());
 
+
+
+//Binary Serach only works on sorted data
+int[] array = new int[] {1,2,3,4,5,6,7,8,9,10};
+var search = new Search();
+System.Console.WriteLine(search.BinarySearch(array,9));
